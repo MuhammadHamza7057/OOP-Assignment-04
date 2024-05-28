@@ -20,7 +20,7 @@ public class FacultyRegistration extends JDialog{
 
     public FacultyRegistration(JFrame parent) {
         super(parent, "Faculty Registration", true);
-        setSize(400, 500);
+        setSize(450, 500);
         setLocationRelativeTo(null);
         setContentPane(FacultyRegistration);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
@@ -90,13 +90,13 @@ public class FacultyRegistration extends JDialog{
                 }
             }
         });
-        //setVisible(true);
+        setVisible(true);
     }
 
     public static void main(String[] args) {
         FacultyRegistration dialog = new FacultyRegistration(null);
         dialog.pack();
-        dialog.setVisible(true);
+       // dialog.setVisible(true);
 
     }
 }
