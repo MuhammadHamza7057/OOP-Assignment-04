@@ -16,6 +16,7 @@ public class Maindashboard extends JDialog {
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         setModal(true);
         setLocationRelativeTo(parent);
+        //cbchoice.additem("1");
 
 
         btnfacultymember.addActionListener(new ActionListener() {

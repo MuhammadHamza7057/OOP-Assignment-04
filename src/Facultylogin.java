@@ -10,6 +10,7 @@ public class Facultylogin extends JDialog{
     private JButton btnback;
     private JButton btnlogin;
     private JPanel FacultyRegistration;
+    private JPanel FacultyDashboard;
 
     public Facultylogin(JFrame parent) {
         super(parent, "Faculty Login", true);
@@ -92,6 +93,22 @@ public class Facultylogin extends JDialog{
 
         });
 
+        btnlogin.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                FacultyDashboard facultyDashboard = new FacultyDashboard(null);
+                facultyDashboard.setVisible(true);
+                dispose();
+            }
+        });
+        btnlogin.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                FacultyDashboard facultyDashboard = new FacultyDashboard(null);
+                facultyDashboard.setVisible(true);
+                dispose();
+            }
+        });
     }
 
     public static void main(String[] args) {
